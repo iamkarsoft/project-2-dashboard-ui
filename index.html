@@ -9,38 +9,45 @@
     <title>Dashboard UI</title>
 </head>
 <body>
-    <section class="row wrapper col-md-12">
+           <input type="checkbox" id="sidebarToggle" name="sidebar-toggle">
+    <section class="row wrapper ">
         <!--sidebar-->
-        <section class="col-md-2 sidebar nav-sidebar hidden-xs hidden-sm">
-            
-            <ul class="sidebar-nav text-center">
-                <li class="brand" style="margin-top:0"><h3 >Freelancer</h3></li>
-                <li><a href="#"> <span class="fa fa-home"></span> Home</a></li>
-                <li><a href="#"><span class="fa fa-search"></span> Overview</a></li>
-                <li><a href="#"><span class="fa fa-user"></span> Members</a></li>
-                <li><a href="#"><span class="fa fa-file-o"></span> Schedule</a></li>
-                <li><a href="#"><span class="fa fa-calendar"></span> Invoices</a></li>
-                <li><a href="#"><span class="fa fa-bullhorn"></span> Marketing</a></li>
-                <li><a href="#"><span class="fa fa-cog"></span> Settings</a></li>
-            </ul>
-            
-        </section><!--/sidebar-->
-      
+    
+              <label for="sidebarToggle" class="toggled"><span class="fa fa-3x fa-align-justify"></span></label>
         <!--page content-->
-        <section class=" col-md-10 col-xs-12 col-sm-12 page-content">
+        <section class=" container page-content">
             <section class="container-fluid">
 
                 
-                    <section class="navbar navbar-default">
-    
-                        <ul class="navbar-nav nav ">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                    <section class="navbar navbar-default navbar-fixed-top">
+                     
+                        <ul class="navbar-nav navbar-right ">
+                    
+                            <li class="dropdown" style="background: transparent; margin-right: 30px">
+                        <a type="button" class=" dropdown-toggle pull-right" id="dropdownMenu1" data-toggle="dropdown" style="background: transparent">
+    			            <span class="fa fa-user" style="color:#000"></span>&nbsp; Kofi Ramos
+                           
+                            <span class=" fa fa-chevron-down" style="color: #63c6ae"></span>
+    			        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"> 
+                                <a role="menuitem" tabindex="-1">
+                                   #
+                                </a> 
+                            </li>
+                         
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-sign-out"></span>&nbsp;Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                         </ul>
                     </section>
                 
 
-                <section class="panel panel-default">
+                <section class="panel panel-default" style="margin-top:100px">
                     <section class="panel-heading text-center">
                         Summary of this month
                     </section><!--/panel heading-->
@@ -205,8 +212,22 @@
             </section><!--/container-fluid-->
         </section><!--/page conent-->
         
+            <section class=" sidebar">
+     
+            <ul class="sidebar-nav text-center">
+                <li class="brand" style="margin-top:0"><h3 >Freelancer</h3></li>
+                <li><a href="#"> <span class="fa fa-home"></span> Home</a></li>
+                <li><a href="#"><span class="fa fa-search"></span> Overview</a></li>
+                <li><a href="#"><span class="fa fa-user"></span> Members</a></li>
+                <li><a href="#"><span class="fa fa-file-o"></span> Schedule</a></li>
+                <li><a href="#"><span class="fa fa-calendar"></span> Invoices</a></li>
+                <li><a href="#"><span class="fa fa-bullhorn"></span> Marketing</a></li>
+                <li><a href="#"><span class="fa fa-cog"></span> Settings</a></li>
+            </ul>
+            
+        </section><!--/sidebar-->
     </section>
 
-<script src="assets/js/app.min.js"></script>    
+<script src="public/js/app.js"></script>    
 </body>
 </html>
