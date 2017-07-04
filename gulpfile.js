@@ -16,7 +16,9 @@ gulp.task("concatScript",function(){
         return gulp.src([
                 "assets/js/jquery-2.1.4.min.js",
                 "assets/js/bootstrap.min.js",
-                "assets/js/custom.js"
+                "assets/js/custom.js",
+                "assets/js/chartist.min.js"
+                
             ])
             .pipe(concat("app.js"))
             .pipe(gulp.dest("public/js"))
